@@ -10,3 +10,5 @@ Onhan tämä töiden ohessa opiskelu ihan ~~perseestä~~ siis **tosi kivaa**!
 
 [konmentorivi.txt](https://github.com/jannelem/ot-harjoitustyo-sl22/blob/master/laskarit/viikko1/komentorivi.txt)
 [gitlog.txt](https://github.com/jannelem/ot-harjoitustyo-sl22/blob/master/laskarit/viikko1/gitlog.txt)
+
+*Tämä teksti on lisätty paikallisella koneella!*
