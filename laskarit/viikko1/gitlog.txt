@@ -1,7 +1,7 @@
 commit 39a764ff20d15de5bf89ec07f98dd1fe24c79963
 Author: Janne Lempinen <janne.lempinen@edu.hel.fi>
 Date:   Mon Nov 7 22:46:25 2022 +0200
-
+**Lisäys: PÖÖ!**
     tehtävä 11 tehty
 
  tiedostoja/file2             | 0
