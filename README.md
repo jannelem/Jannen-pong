@@ -14,3 +14,9 @@ Onhan tämä töiden ohessa opiskelu ihan ~~perseestä~~ siis **tosi kivaa**!
 
 *Tämä teksti on lisätty paikallisella koneella!*
 **Muutos, joka on tehty paikallisella koneella ja committoidaan muttei pushata.**
+
+### Viikko 2
+
+[Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjantpito](./dokumentaatio/tuntikirjanpito.md)
