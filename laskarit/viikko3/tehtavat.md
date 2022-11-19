@@ -54,3 +54,11 @@ classDiagram
 ```
 
 Huom.! En löytänyt konstia saada Mermaid-syntaksissa aikaan onttoa nuolta kuvaamaan perintää, joten tämän kaavion mustapäiset nuolet tulisi tulkita perinnäksi.
+
+## Tehtävä 3
+
+![tehtävän 3 sekvenssikaavio](teht3.png)
+
+## Tehtävä 4
+
+![tehtävän 4 sekvenssikaavio](teht4.png)
