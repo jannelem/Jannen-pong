@@ -6,7 +6,7 @@ Tässä projektissa koodattava sovellus on klassinen Pong-peli, jossa käyttäj�
 
 ## Perusversion tarjoama toiminnallisuus
 
-Kurssin alkuvaiheessa koodattavassa perusversiossa tavoitteena on saada aikaan toimiva peli, jossa pallo liikkuu ja pelaajan ja tietokoneen mailat vaikuttavat pallon liikkeeseen. Pelaaja ohjaa omaa mailaansa näppäimistöllä. Tätä perusversiota voidaan myös kurssin aikana havaitut kehitystarpeet huomioiden parannella esimerkiksi pallon ja tietokoneen mailan liikkumisen sääntöjen osalta, jotta pelaaminen olisi mahdollisimman sujuvaa.
+Kurssin alkuvaiheessa koodattavassa perusversiossa tavoitteena on saada aikaan toimiva peli, jossa pallo liikkuu ja pelaajan ja tietokoneen mailat vaikuttavat pallon liikkeeseen. (Tämä versio ei ole vielä viikolla 3 valmis.) Pelaaja ohjaa omaa mailaansa näppäimistöllä. Tätä perusversiota voidaan myös kurssin aikana havaitut kehitystarpeet huomioiden parannella esimerkiksi pallon ja tietokoneen mailan liikkumisen sääntöjen osalta, jotta pelaaminen olisi mahdollisimman sujuvaa.
 
 ## Jatkokehitysideoita
 

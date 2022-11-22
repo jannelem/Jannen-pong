@@ -1,22 +1,45 @@
-# Kurssi alkaa!
+# Pong
 
-Yritetäänpä uudestaan, koska viimeksi kurssi jäi *kesken*. Koodaukseen ei vain jäänyt **aikaa**, koska kurssi sattuu opettajan työn kannalta hankalimpaan mahdolliseen kohtaan sekä syys- että kevätlukukaudella.
+Kurssilla toteutettava Pong-peli on lastenkengissään, eikä mitään liikettä näytölle ole saatu aikaan. Tarkoitus on, että pelin seuraava versio toimii ja sisältää enemmän ominaisuuksia.
 
-Onhan tämä töiden ohessa opiskelu ihan ~~perseestä~~ siis **tosi kivaa**!
 
-## Tehtävät
+## Python-versio
 
-### Viikko 1
+Sovellus toimii Pythonin versiolla 3.8, mutta vanhemmilla versioilla toimivuutta ei voida taata.
 
-[komentorivi.txt](./laskarit/viikko1/komentorivi.txt)
+## Dokumentaatio
 
-[gitlog.txt](./laskarit/viikko1/gitlog.txt)
+- Käyttöohje (tulossa )
+- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- Arkkitehtuurikuvaus (tulossa)
+- Testausdokumentti (tulossa)
+- [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
+- [Changelog](./dokumentaatio/changelog.md)
 
-*Tämä teksti on lisätty paikallisella koneella!*
-**Muutos, joka on tehty paikallisella koneella ja committoidaan muttei pushata.**
+## Sovelluksen asentaminen ja suoritus
 
-### Viikko 2
+1. Riippuvuudet asennetaan suorittamalla komento:
 
-[Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+```bash
+poetry install
+```
 
-[Työaikakirjantpito](./dokumentaatio/tuntikirjanpito.md)
+2. Sovelluksen käynnistäminen:
+
+```bash
+poetry run invoke start
+```
+
+## Komentorivitoiminnot
+
+- Testit ajetaan komennolla
+
+```bash
+poetry run invoke test
+```
+
+- Testikattavuusraportti muodostetaan komennolla
+
+```bash
+poetry run invoke coverage-report
+```
