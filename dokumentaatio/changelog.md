@@ -6,3 +6,7 @@
 - aloitettu testaus yhdellä testillä
 - lisätty kurssin ohjeistuksessa vaaditut invoke-komennot
 
+## Viikko 4
+
+- Koodattu toimiva perusversio pelistä ilman pistelaskentaa
+- Lisätty invoke-komennot lint ja format
