@@ -1,6 +1,6 @@
 # Pong
 
-Kurssilla toteutettava Pong-peli on lastenkengissään, eikä mitään liikettä näytölle ole saatu aikaan. Tarkoitus on, että pelin seuraava versio toimii ja sisältää enemmän ominaisuuksia.
+Pongia voi pelata tässä versiossa tietokonetta vastaan ilman pistelaskua. Vasemmalla sijaitsevaa pelaajan mailaa liikutetaan pystysuunnassa nuolinäppäimillä. Tietokoneen maila oikealla liikkuu pallon liikkeiden mukana. Pallo kimpoaa seinistä siten, pallon nopeuden seinää vastaan kohtisuora komponentti muuttuu vastakkaismerkkiseksi. Mailasta pallo kimpoaa siten, että nopeuden mailaa vastaan kohtisuora komponentti muuttuu vastakkaismerkkiseksi ja mailan suuntainen komponentti saa satunnaisen arvon.
 
 
 ## Python-versio
@@ -11,7 +11,7 @@ Sovellus toimii Pythonin versiolla 3.8, mutta vanhemmilla versioilla toimivuutta
 
 - Käyttöohje (tulossa )
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
-- Arkkitehtuurikuvaus (tulossa)
+- [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
 - Testausdokumentti (tulossa)
 - [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
@@ -42,4 +42,16 @@ poetry run invoke test
 
 ```bash
 poetry run invoke coverage-report
+```
+
+- Koodin automaattinen formatointi toimii komennolla
+
+```bash
+poetry run invoke format
+```
+
+- Koodin Pylint-analyysin saa nähtäväkseen komennolla
+
+```bash
+poetry run invoke lint
 ```
