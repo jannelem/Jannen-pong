@@ -10,3 +10,6 @@
 
 - Koodattu toimiva perusversio pelistä ilman pistelaskentaa
 - Lisätty invoke-komennot lint ja format
+- Koska importit eivät toimi (vaan ovat täysin henkimaailman asia), käyttöliittymä ja sovelluslogiikka ovat nyt iloisesti sekaisin.
+- Lisätty arkkitehtuuridokumenttiin luokkakaavio tavoitellusta rakenteesta, ei siis siitä mitä koodi nykyään eedustaa.
+- Kasvatettu testikattavuutta
