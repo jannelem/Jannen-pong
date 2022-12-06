@@ -28,12 +28,13 @@ class MenuView:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     exit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_RETURN:
+                        game_view = GameView(self.screen, self.bkg_color, self.object_color, self.screen_size, self.object_width)
+                        game_view.run()
+                    elif event.key == pygame.K_ESCAPE:
+                        exit()
 
-            keys = pygame.key.get_pressed()
-            if keys[pygame.K_RETURN]:
-                self.start_pong()
-            if keys[pygame.K_ESCAPE]:
-                break
 
             self.screen.fill(self.bkg_color)
             self.screen.blit(first_row_text, (100, 50))

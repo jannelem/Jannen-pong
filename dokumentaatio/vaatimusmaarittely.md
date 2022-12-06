@@ -12,6 +12,6 @@ Kurssin alkuvaiheessa koodattavassa perusversiossa tavoitteena on saada aikaan t
 
 Seuraavia ominaisuuksia voidaan lisätä perusversioon kurssin edetessä, tavoitteena kuitenkin säilyttää koko ajan vakaa versio sovelluksesta:
 
+- aloitusvalikko, josta peli käynnistetään ja jonka kautta sovellus voidaan sulkea *tehty*
 - pelin aikana näkyvä pistelaskuri
-- aloitusvalikko, josta peli käynnistetään ja jonka kautta sovellus voidaan sulkea
 - parhaiden pisteiden tallentaminen ohjelman suorituksen aikana ja pitkäaikaistallennus (ja parhaiden pisteiden näyttäminen aloitusvalikon kautta)

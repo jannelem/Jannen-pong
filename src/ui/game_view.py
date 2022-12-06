@@ -19,15 +19,17 @@ class GameView:
         while self.pong_service.running():
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    self.pong_service.stop()
+                    exit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        self.pong_service.stop()
 
             keys = pygame.key.get_pressed()
             if keys[pygame.K_UP]:
                 self.pong_service.player_move_up()
             if keys[pygame.K_DOWN]:
                 self.pong_service.player_move_down()
-            if keys[pygame.K_ESCAPE]:
-                break
+
 
             self.pong_service.handle_game_events()
             self.pong_service.sprites().update()

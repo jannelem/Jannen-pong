@@ -13,3 +13,11 @@
 - Koska importit eivät toimi (vaan ovat täysin henkimaailman asia), käyttöliittymä ja sovelluslogiikka ovat nyt iloisesti sekaisin.
 - Lisätty arkkitehtuuridokumenttiin luokkakaavio tavoitellusta rakenteesta, ei siis siitä mitä koodi nykyään eedustaa.
 - Kasvatettu testikattavuutta
+
+## Viikko 5
+
+- Arkkitehtuuri on rakennettu alusta lähtien uudelleen
+- Sovelluslogiikka ja käyttöliittymä ovat nyt erillään toisistaan
+- Lisätty aloitusvalikko
+- Testikattavuutta on kasvatettu
+- Arkkitehtuuridokumentin luokkakaavio päivitetty

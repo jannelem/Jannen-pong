@@ -8,4 +8,9 @@
 | 28.11. | 4 | koodaus aloitettu lähes kokonaan alusta, saatu aikaan toimiva perusversio |
 | 29.11. | 5 | yritetty parantaa koodin rakennetta, mutta ohjelma hajosi, palattu em. perusversioon |
 | 29.11. | 2 | lisätty testejä ja luokkakaavio | 
-| yht | 22 | |
+| 4.12.  | 3 | arkkitehtuurin parantaminen |
+| 5.12. | 2 | pelin toimivuuden parantaminen |
+| 6.12. | 4 | valikon koodaus ja arkkitehtuurin muokkaus |
+| 6.12. | 2 | testaus |
+| 6.12. | 1 | dokumentaation päivitys |
+| yht | 34 | |
