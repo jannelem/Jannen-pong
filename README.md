@@ -1,7 +1,8 @@
 # Pong
 
-Pongia voi pelata tässä versiossa tietokonetta vastaan ilman pistelaskua. Vasemmalla sijaitsevaa pelaajan mailaa liikutetaan pystysuunnassa nuolinäppäimillä. Tietokoneen maila oikealla liikkuu pallon liikkeiden mukana. Pallo kimpoaa seinistä siten, pallon nopeuden seinää vastaan kohtisuora komponentti muuttuu vastakkaismerkkiseksi. Mailasta pallo kimpoaa siten, että nopeuden mailaa vastaan kohtisuora komponentti muuttuu vastakkaismerkkiseksi ja mailan suuntainen komponentti saa satunnaisen arvon.
+Pongia voi pelata tässä versiossa tietokonetta vastaan ilman pistelaskua. Pelin aloitusvalikossa on tällä hetkellä vaihtoehtoina pelin käynnistys tai pelin sulkeminen. Pelistä takaisin aloitusvalikkoon pääsee painamalla Esc-näppäintä.
 
+Vasemmalla sijaitsevaa pelaajan mailaa liikutetaan pystysuunnassa nuolinäppäimillä. Tietokoneen maila oikealla liikkuu pallon liikkeiden mukana silloin, kun pallo on tietokoneen puolella ruutua liikkumassa tietokoneen mailaa kohti. Pallo kimpoaa seinistä siten, että se saapuu ja lähtee seinästä yhtä suuressa kulmassa. Mailasta pallo kimpoaa satunnaiseen suuntaan.
 
 ## Python-versio
 
