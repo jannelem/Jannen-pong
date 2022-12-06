@@ -18,7 +18,7 @@ class TestBall(unittest.TestCase):
         self.ball.velocity[0] = 1
         self.ball.bounce()
         self.assertLess(self.ball.velocity[0], 0)
-    
+
     def test_ball_bounces_right(self):
         self.ball.velocity[0] = -1
         self.ball.bounce()

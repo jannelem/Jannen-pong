@@ -30,7 +30,6 @@ class GameView:
             if keys[pygame.K_DOWN]:
                 self.pong_service.player_move_down()
 
-
             self.pong_service.handle_game_events()
             self.pong_service.sprites().update()
 

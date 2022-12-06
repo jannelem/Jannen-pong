@@ -30,11 +30,11 @@ class MenuView:
                     exit()
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
-                        game_view = GameView(self.screen, self.bkg_color, self.object_color, self.screen_size, self.object_width)
+                        game_view = GameView(
+                            self.screen, self.bkg_color, self.object_color, self.screen_size, self.object_width)
                         game_view.run()
                     elif event.key == pygame.K_ESCAPE:
                         exit()
-
 
             self.screen.fill(self.bkg_color)
             self.screen.blit(first_row_text, (100, 50))
