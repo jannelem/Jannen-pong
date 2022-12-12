@@ -3,7 +3,21 @@ from services.pong_service import PongService
 
 
 class GameView:
+    """Pelaamisen aikaiseta näkymästä vastaava käyttöliittymäluokka.
+
+    Attributes:
+        pong_service (PongService): pelin tietojen muokkaamisesta vastaava olio
+    """
     def __init__(self, screen, bkg_color, object_color, screen_size, object_width):
+        """Luokan konstruktori, joka alustaa pelin.
+
+        Args:
+            screen (pygame.display): pygamen ruutu
+            bkg_color (tuple): taustaväri
+            object_color (tuple): pallon ja mailojen väri
+            screen_size (tuple): ruudun koko
+            object_width (int): pallon ja mailojen koko
+        """
         self.pong_service = PongService(
             bkg_color, object_color, screen_size, object_width)
         self.bkg_color = bkg_color
@@ -13,6 +27,8 @@ class GameView:
         self.object_width = object_width
 
     def run(self):
+        """Pelin etenemisestä vastaava metodi, joka sisältää pelisilmukan.
+        """
 
         pygame.init()
         clock = pygame.time.Clock()

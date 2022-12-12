@@ -3,8 +3,19 @@ from ui.game_view import GameView
 
 
 class MenuView:
+    """Pelin päävalikosta vastaava käyttöliittymäluokka.
+    """
 
     def __init__(self, screen, bkg_color, object_color, screen_size, object_width):
+        """Luokan konstruktori.
+
+        Args:
+            screen (pygame.display): display-olio, jolle piirretään
+            bkg_color (tuple): taustaväri
+            object_color (tuple): tekstin väri
+            screen_size (tuple): ruudun koko
+            object_width (int): objektien koko
+        """
         self.bkg_color = bkg_color
         self.object_color = object_color
         self.screen = screen
@@ -12,6 +23,9 @@ class MenuView:
         self.object_width = object_width
 
     def run(self):
+
+        """Valikon näyttämisestä ja näppäinten painalluksiin vastaamisesta huolehtiva luokka.
+        """
 
         pygame.init()
 
@@ -46,6 +60,8 @@ class MenuView:
         pygame.quit()
 
     def start_pong(self):
+        """Käynnistää pelin.
+        """
         game_view = GameView(self.screen, self.bkg_color,
                              self.object_color, self.screen_size, self.object_width)
         game_view.run()

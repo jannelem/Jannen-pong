@@ -5,7 +5,27 @@ from entities.objects import Ball
 
 class Pong:
 
+    """Pelin tietosisällöstä vastaava luokka.
+
+        Attributes:
+            player_paddle (Paddle): pelaajan maila
+            computer_paddle (Paddle): tietokoneen maila
+            ball (Ball): pelin pallo
+            paddles: mailat sisältävä ryhmä
+            all_sprites: mailat ja pallon sisältävä ryhmä
+            running (boolean): True, jos peli on meneillään ja False, jos peli on päättynyt
+
+    """
+
     def __init__(self, bkg_color, object_color, screen_size, object_width):
+        """Luokan konstruktori, joka luo pelin mailat ja pallon.
+
+        Args:
+            bkg_color (tuple): taustaväri
+            object_color (tuple): pallon ja mailojen väri
+            screen_size (tuple): ruudun koko
+            object_width (int): mailojen ja pallon koko
+        """
         self.running = True
 
         self.player_paddle = Paddle(
