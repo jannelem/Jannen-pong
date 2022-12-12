@@ -5,6 +5,7 @@ from entities.pong import Pong
 class PongService:
     """Luokka, joka muokkaa pelin Pong-luokan tietosisältöä ja jonka metodeita kutsutaan käyttöliittymäluokista.
     """
+
     def __init__(self, bkg_color, object_color, screen_size, object_width):
         """Konstruktori, joka alustaa olion ja luo pelin.
 
@@ -43,6 +44,10 @@ class PongService:
         if self.pong.ball.rect.x >= self.screen_size[0]-self.pong.ball.rect.width or \
                 self.pong.ball.rect.x <= 0:
             self.pong.ball.velocity[0] *= -1
+            if self.pong.ball.rect.x <=0:
+                self._computer_scores()
+            elif self.pong.ball.rect.x >= self.screen_size[0]-self.pong.ball.rect.width:
+                self._player_scores()
         if self.pong.ball.rect.y >= self.screen_size[1] - self.pong.ball.rect.height or \
                 self.pong.ball.rect.y <= 0:
             self.pong.ball.velocity[1] *= -1
@@ -58,6 +63,16 @@ class PongService:
         self._computer_move()
         self._handle_wall_collisions()
         self._handle_paddle_collisions()
+    
+    def _player_scores(self):
+        """Kasvattaa pelaajan pistemäärää.
+        """
+        self.pong.scores[0] += 1
+    
+    def _computer_scores(self):
+        """Kasvattaa tietokoneen pistemäärää.
+        """
+        self.pong.scores[1] += 1
 
     def running(self):
         """_summary_
@@ -79,3 +94,11 @@ class PongService:
             Lista, joka sisältää pelin mailat ja pallon.
         """
         return self.pong.all_sprites
+    
+    def scores(self):
+        """Pelin pistetilanne.
+
+        Returns:
+            list: lista, jossa ensimmäisenä pelaajan pisteet ja toisena tietokoneen pisteet
+        """
+        return self.pong.scores

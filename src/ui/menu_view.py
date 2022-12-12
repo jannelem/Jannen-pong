@@ -23,7 +23,6 @@ class MenuView:
         self.object_width = object_width
 
     def run(self):
-
         """Valikon näyttämisestä ja näppäinten painalluksiin vastaamisesta huolehtiva luokka.
         """
 
@@ -34,6 +33,7 @@ class MenuView:
             "Tervetuloa pelaamaan Pongia!", True, self.object_color)
         start_game_text = font.render(
             "Aloita peli painamalla Enter", True, self.object_color)
+        hiscores_text = font.render("Katso parhaat pisteet painamalla H", True, self.object_color)
         close_window_text = font.render(
             "Lopeta peli painamalla Esc", True, self.object_color)
         clock = pygame.time.Clock()
@@ -53,7 +53,8 @@ class MenuView:
             self.screen.fill(self.bkg_color)
             self.screen.blit(first_row_text, (100, 50))
             self.screen.blit(start_game_text, (100, 150))
-            self.screen.blit(close_window_text, (100, 250))
+            self.screen.blit(hiscores_text, (100, 250))
+            self.screen.blit(close_window_text, (100, 350))
             pygame.display.flip()
             clock.tick(60)
 

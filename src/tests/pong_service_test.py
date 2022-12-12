@@ -34,3 +34,50 @@ class TestPongService(unittest.TestCase):
 
     def test_correct_number_of_sprites(self):
         self.assertEqual(len(self.pong_service.sprites()), 3)
+
+    def test_computer_moves_down(self):
+        self.pong_service.pong.computer_paddle.rect.y = 100
+        self.pong_service.pong.ball.rect.x = 400
+        self.pong_service.pong.ball.rect.y = 200
+        self.pong_service.pong.ball.velocity = [1, 1]
+        self.pong_service._computer_move()
+        self.assertEqual(self.pong_service.pong.computer_paddle.rect.y, 105)
+
+    def test_computer_moves_up(self):
+        self.pong_service.pong.computer_paddle.rect.y = 200
+        self.pong_service.pong.ball.rect.x = 400
+        self.pong_service.pong.ball.rect.y = 100
+        self.pong_service.pong.ball.velocity = [1, 1]
+        self.pong_service._computer_move()
+        self.assertEqual(self.pong_service.pong.computer_paddle.rect.y, 195)
+
+    def test_ball_bounces_from_horizontal_wall(self):
+        self.pong_service.pong.ball.rect.x = 100
+        self.pong_service.pong.ball.rect.y = 5
+        self.pong_service.pong.ball.velocity = [5, -5]
+        self.pong_service.pong.ball.update()
+        self.pong_service._handle_wall_collisions()
+        self.assertEqual(self.pong_service.pong.ball.velocity[1], 5)
+
+    def test_ball_bounces_from_vertical_wall(self):
+        self.pong_service.pong.ball.rect.x = 635
+        self.pong_service.pong.ball.rect.y = 5
+        self.pong_service.pong.ball.velocity = [5, -5]
+        self.pong_service.pong.ball.update()
+        self.pong_service._handle_wall_collisions()
+        self.assertEqual(self.pong_service.pong.ball.velocity[0], -5)
+
+    def test_ball_does_not_bounce_without_collision(self):
+        old_velocity = self.pong_service.pong.ball.velocity
+        self.pong_service.handle_game_events()
+        self.assertEqual(self.pong_service.pong.ball.velocity, old_velocity)
+
+    def test_ball_bounces_from_player_paddle(self):
+        self.pong_service.pong.ball.velocity = [-4, 0]
+        self.pong_service.pong.ball.rect.x = 60
+        self.pong_service.pong.ball.rect.y = 120
+        self.pong_service.pong.player_paddle.rect.x = 50
+        self.pong_service.pong.player_paddle.rect.y = 100
+        self.pong_service.sprites().update()
+        self.pong_service._handle_paddle_collisions()
+        self.assertGreater(self.pong_service.pong.ball.velocity[0], 0)

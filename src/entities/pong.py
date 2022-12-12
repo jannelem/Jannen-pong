@@ -14,6 +14,7 @@ class Pong:
             paddles: mailat sisältävä ryhmä
             all_sprites: mailat ja pallon sisältävä ryhmä
             running (boolean): True, jos peli on meneillään ja False, jos peli on päättynyt
+            scores (list): Pelin pisteet (ensimmäinen alkio pelaajan pisteet ja toinen alkio tietokoneen)
 
     """
 
@@ -27,6 +28,7 @@ class Pong:
             object_width (int): mailojen ja pallon koko
         """
         self.running = True
+        self.scores = [0,0]
 
         self.player_paddle = Paddle(
             bkg_color, object_color, object_width, object_width*10)
