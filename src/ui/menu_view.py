@@ -33,7 +33,8 @@ class MenuView:
             "Tervetuloa pelaamaan Pongia!", True, self.object_color)
         start_game_text = font.render(
             "Aloita peli painamalla Enter", True, self.object_color)
-        hiscores_text = font.render("Katso parhaat pisteet painamalla H", True, self.object_color)
+        hiscores_text = font.render(
+            "Katso parhaat pisteet painamalla H", True, self.object_color)
         close_window_text = font.render(
             "Lopeta peli painamalla Esc", True, self.object_color)
         clock = pygame.time.Clock()

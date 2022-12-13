@@ -47,9 +47,11 @@ class GameView:
                 self.pong_service.player_move_up()
             if keys[pygame.K_DOWN]:
                 self.pong_service.player_move_down()
-            
+
             scores = self.pong_service.scores()
-            scores_string = "Pelaaja: " + str(scores[0]) + " Tietokone: " + str(scores[1]) + ", paina Esc lopettaaksesi"
+            scores_string = "Pelaaja: " + \
+                str(scores[0]) + " Tietokone: " + \
+                str(scores[1]) + ", paina Esc lopettaaksesi"
             scores_text = font.render(scores_string, True, self.object_color)
 
             self.pong_service.handle_game_events()
@@ -58,9 +60,10 @@ class GameView:
             self.screen.fill(self.bkg_color)
             pygame.draw.line(self.screen, self.object_color, [self.screen_size[0]//2, 0], [
                              self.screen_size[0]//2, self.screen_size[1]-1], self.object_width//2)
-            self.screen.blit(scores_text, (self.screen_size[0]//10, self.screen_size[1]-2*self.object_width))
+            self.screen.blit(
+                scores_text, (self.screen_size[0]//10, self.screen_size[1]-2*self.object_width))
             self.pong_service.sprites().draw(self.screen)
-        
+
             pygame.display.flip()
 
             clock.tick(60)

@@ -28,7 +28,7 @@ class Pong:
             object_width (int): mailojen ja pallon koko
         """
         self.running = True
-        self.scores = [0,0]
+        self.scores = [0, 0]
 
         self.player_paddle = Paddle(
             bkg_color, object_color, object_width, object_width*10)

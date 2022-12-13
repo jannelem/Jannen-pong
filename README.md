@@ -1,6 +1,6 @@
 # Pong
 
-Pongia voi pelata tässä versiossa tietokonetta vastaan ilman pistelaskua. Pelin aloitusvalikossa on tällä hetkellä vaihtoehtoina pelin käynnistys tai pelin sulkeminen. Pelistä takaisin aloitusvalikkoon pääsee painamalla Esc-näppäintä.
+Pongia voi pelata tässä versiossa tietokonetta vastaan ilman pistelaskua. Pelin aloitusvalikossa on tällä hetkellä vaihtoehtoina pelin käynnistys tai pelin sulkeminen. Pelistä takaisin aloitusvalikkoon pääsee painamalla Esc-näppäintä. (Aloitusvalikon pistelistatoiminto ei vielä ole käytössä.)
 
 Vasemmalla sijaitsevaa pelaajan mailaa liikutetaan pystysuunnassa nuolinäppäimillä. Tietokoneen maila oikealla liikkuu pallon liikkeiden mukana silloin, kun pallo on tietokoneen puolella ruutua liikkumassa tietokoneen mailaa kohti. Pallo kimpoaa seinistä siten, että se saapuu ja lähtee seinästä yhtä suuressa kulmassa. Mailasta pallo kimpoaa satunnaiseen suuntaan.
 

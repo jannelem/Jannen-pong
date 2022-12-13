@@ -13,4 +13,6 @@
 | 6.12. | 4 | valikon koodaus ja arkkitehtuurin muokkaus |
 | 6.12. | 2 | testaus |
 | 6.12. | 1 | dokumentaation päivitys |
-| yht | 34 | |
+| 12.12. | 3 | testikattavuuden kasvatusta ja docstringiä |
+| 12.12. | 2  | pieniä muutoksia koodiin, pistelaskun lisäys |
+| yht | 39 | |

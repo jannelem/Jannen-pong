@@ -21,3 +21,10 @@
 - Lisätty aloitusvalikko
 - Testikattavuutta on kasvatettu
 - Arkkitehtuuridokumentin luokkakaavio päivitetty
+
+## Viikko 6
+
+- Testikattavuutta parannettu
+- Docstring-dokumentaatio tehty suurimmalle osalle koodista (tämän seurauksena pylint valittaa liian pitkistä riveistä, vaikkei näitä itse koodissa ole)
+- Peliin ainoana näkyvänä toiminnallisuutena lisätty pistelaskuri, aika ei tällä viikolla riitä muuhun
+- Koodiin tehty pientä hienosäätöä eri puolille

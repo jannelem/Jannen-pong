@@ -44,7 +44,7 @@ class PongService:
         if self.pong.ball.rect.x >= self.screen_size[0]-self.pong.ball.rect.width or \
                 self.pong.ball.rect.x <= 0:
             self.pong.ball.velocity[0] *= -1
-            if self.pong.ball.rect.x <=0:
+            if self.pong.ball.rect.x <= 0:
                 self._computer_scores()
             elif self.pong.ball.rect.x >= self.screen_size[0]-self.pong.ball.rect.width:
                 self._player_scores()
@@ -63,12 +63,12 @@ class PongService:
         self._computer_move()
         self._handle_wall_collisions()
         self._handle_paddle_collisions()
-    
+
     def _player_scores(self):
         """Kasvattaa pelaajan pistemäärää.
         """
         self.pong.scores[0] += 1
-    
+
     def _computer_scores(self):
         """Kasvattaa tietokoneen pistemäärää.
         """
@@ -94,7 +94,7 @@ class PongService:
             Lista, joka sisältää pelin mailat ja pallon.
         """
         return self.pong.all_sprites
-    
+
     def scores(self):
         """Pelin pistetilanne.
 
