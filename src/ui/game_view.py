@@ -9,7 +9,7 @@ class GameView:
         pong_service (PongService): pelin tietojen muokkaamisesta vastaava olio
     """
 
-    def __init__(self, screen, bkg_color, object_color, screen_size, object_width):
+    def __init__(self, screen, bkg_color, object_color, screen_size, object_width, hi_scores):
         """Luokan konstruktori, joka alustaa pelin.
 
         Args:
@@ -18,6 +18,7 @@ class GameView:
             object_color (tuple): pallon ja mailojen väri
             screen_size (tuple): ruudun koko
             object_width (int): pallon ja mailojen koko
+            hi_scores (HiScoreService): piste-ennätyksistä huolehtiva HiScoreService-olio
         """
         self.pong_service = PongService(
             bkg_color, object_color, screen_size, object_width)
@@ -26,6 +27,7 @@ class GameView:
         self.screen = screen
         self.screen_size = screen_size
         self.object_width = object_width
+        self.hi_scores = hi_scores
 
     def run(self):
         """Pelin etenemisestä vastaava metodi, joka sisältää pelisilmukan.

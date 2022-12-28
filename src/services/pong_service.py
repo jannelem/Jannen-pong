@@ -63,6 +63,7 @@ class PongService:
         self._computer_move()
         self._handle_wall_collisions()
         self._handle_paddle_collisions()
+        self._check_scores()
 
     def _player_scores(self):
         """Kasvattaa pelaajan pistemäärää.
@@ -73,6 +74,10 @@ class PongService:
         """Kasvattaa tietokoneen pistemäärää.
         """
         self.pong.scores[1] += 1
+    
+    def _check_scores(self):
+        if sum(self.pong.scores) >= 10:
+            self.pong.running = False
 
     def running(self):
         """_summary_
