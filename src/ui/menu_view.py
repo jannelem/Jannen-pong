@@ -1,5 +1,6 @@
 import pygame
 from ui.game_view import GameView
+from ui.hi_score_view import HiScoreView
 from services.hi_score_service import HiScoreService
 
 
@@ -25,7 +26,7 @@ class MenuView:
         self.hi_scores = HiScoreService()
 
     def run(self):
-        """Valikon näyttämisestä ja näppäinten painalluksiin vastaamisesta huolehtiva luokka.
+        """Valikon näyttämisestä ja näppäinten painalluksiin vastaamisesta huolehtiva metodi.
         """
 
         pygame.init()
@@ -47,9 +48,9 @@ class MenuView:
                     exit()
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
-                        game_view = GameView(
-                            self.screen, self.bkg_color, self.object_color, self.screen_size, self.object_width, self.hi_scores)
-                        game_view.run()
+                        self.start_pong()
+                    if event.key == pygame.K_h:
+                        self.show_high_scores()
                     elif event.key == pygame.K_ESCAPE:
                         exit()
 
@@ -69,3 +70,8 @@ class MenuView:
         game_view = GameView(self.screen, self.bkg_color,
                              self.object_color, self.screen_size, self.object_width, self.hi_scores)
         game_view.run()
+
+    def show_high_scores(self):
+        hi_score_view = HiScoreView(self.screen, self.bkg_color,
+                                    self.object_color, self.screen_size, self.object_width, self.hi_scores)
+        hi_score_view.run()

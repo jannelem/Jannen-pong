@@ -1,9 +1,10 @@
 import pygame
 from services.pong_service import PongService
+from ui.game_over_view import GameOverView
 
 
 class GameView:
-    """Pelaamisen aikaiseta näkymästä vastaava käyttöliittymäluokka.
+    """Pelaamisen aikaisesta näkymästä vastaava käyttöliittymäluokka.
 
     Attributes:
         pong_service (PongService): pelin tietojen muokkaamisesta vastaava olio
@@ -21,7 +22,7 @@ class GameView:
             hi_scores (HiScoreService): piste-ennätyksistä huolehtiva HiScoreService-olio
         """
         self.pong_service = PongService(
-            bkg_color, object_color, screen_size, object_width)
+            bkg_color, object_color, screen_size, object_width, hi_scores)
         self.bkg_color = bkg_color
         self.object_color = object_color
         self.screen = screen
@@ -69,3 +70,7 @@ class GameView:
             pygame.display.flip()
 
             clock.tick(60)
+
+        game_over_view = GameOverView(self.screen, self.bkg_color, self.object_color,
+                                      self.screen_size, self.object_width, self.hi_scores, self.pong_service)
+        game_over_view.run()

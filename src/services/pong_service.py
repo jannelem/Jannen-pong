@@ -6,7 +6,7 @@ class PongService:
     """Luokka, joka muokkaa pelin Pong-luokan tietosisältöä ja jonka metodeita kutsutaan käyttöliittymäluokista.
     """
 
-    def __init__(self, bkg_color, object_color, screen_size, object_width):
+    def __init__(self, bkg_color, object_color, screen_size, object_width, hi_scores):
         """Konstruktori, joka alustaa olion ja luo pelin.
 
         Args:
@@ -18,6 +18,7 @@ class PongService:
         self.pong = Pong(bkg_color, object_color, screen_size, object_width)
         self.screen_size = screen_size
         self.object_width = object_width
+        self.hi_scores = hi_scores
 
     def player_move_up(self):
         """Metodi, jota kutsutaan käyttöliittymästä pelaajan liikuttaessa mailaansa ylöspäin.
@@ -74,8 +75,10 @@ class PongService:
         """Kasvattaa tietokoneen pistemäärää.
         """
         self.pong.scores[1] += 1
-    
+
     def _check_scores(self):
+        """Tarkistaa, onko osumia kertynyt riittävästi pelin päättämiseen ja tarvittaessa päättää pelin.
+        """
         if sum(self.pong.scores) >= 10:
             self.pong.running = False
 
@@ -107,3 +110,6 @@ class PongService:
             list: lista, jossa ensimmäisenä pelaajan pisteet ja toisena tietokoneen pisteet
         """
         return self.pong.scores
+
+    def check_new_hi_score(self):
+        return self.scores()[0] > self.hi_scores.lowest_score()
