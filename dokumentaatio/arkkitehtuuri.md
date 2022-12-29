@@ -17,4 +17,4 @@ Pong "1" -- "1" Ball
 
 Alla oleva sekvenssikaavio kuvaa GameView-luokassa olevan pelisilmukan toimintaa yhden kierroksen aikana. Tässä esimerkissä pelaaja painaa nuolta alaspäin. Esimerkistä on luettavuuden takia jätetty pois tietokoneen mailan siirron ja pallon mahdollisten kimpoamisten yksityiskohtainen käsittely, sillä nämä sisältävät useita muuttujien arvojen lukemisia.
 
-![sekvenssikaavio](sekvenssikaavio.png)
+![sekvenssikaavio](kuvat/sekvenssikaavio.png)

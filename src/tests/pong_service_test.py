@@ -1,11 +1,12 @@
 import unittest
 from services.pong_service import PongService
+from services.hi_score_service import HiScoreService
 
 
 class TestPongService(unittest.TestCase):
     def setUp(self):
         self.pong_service = PongService(
-            (0, 0, 0), (0, 255, 255), (640, 480), 10)
+            (0, 0, 0), (0, 255, 255), (640, 480), 10, HiScoreService())
 
     def test_player_moves_up(self):
         self.pong_service.player_move_up()
