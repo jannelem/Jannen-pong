@@ -2,7 +2,7 @@ import pygame
 
 
 class GameOverView:
-    """Pelin päävalikosta vastaava käyttöliittymäluokka.
+    """Pelin päättymisnäytöstä vastaava käyttöliittymäluokka.
     """
 
     def __init__(self, screen, bkg_color, object_color, screen_size, object_width, hi_scores, pong_service):

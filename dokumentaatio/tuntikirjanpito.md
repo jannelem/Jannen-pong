@@ -15,6 +15,8 @@
 | 6.12. | 1 | dokumentaation päivitys |
 | 12.12. | 3 | testikattavuuden kasvatusta ja docstringiä |
 | 12.12. | 2 | pieniä muutoksia koodiin, pistelaskun lisäys |
-| 27.12. | 4 | pistelistasta vastaavan koodin suunnittelua paperilla |
-| 28.12. | 5 | pistelistan koodaus ja käyttöliittymän kaikki näkymät valmiiksi |
-| yht | 48 | |
+| 28.12. | 4 | pistelistasta vastaavan koodin suunnittelua paperilla |
+| 29.12. | 5 | pistelistan koodaus ja käyttöliittymän kaikki näkymät valmiiksi |
+| 29.12. | 2 | käyttöohjeen kirjoittamista ja pientä siistismistä |
+| 29.12. | 1 | docstringin kirjoittamista viimeisimmille ohjelman laajennuksille |
+| yht | 51 | |
