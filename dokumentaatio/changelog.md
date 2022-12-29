@@ -28,3 +28,8 @@
 - Docstring-dokumentaatio tehty suurimmalle osalle koodista (tämän seurauksena pylint valittaa liian pitkistä riveistä, vaikkei näitä itse koodissa ole)
 - Peliin ainoana näkyvänä toiminnallisuutena lisätty pistelaskuri, aika ei tällä viikolla riitä muuhun
 - Koodiin tehty pientä hienosäätöä eri puolille
+
+## Viikot 7 ja 8 (lopullinen palautus lisäajalla):
+
+- Lisätty pistelista ja sen käsittelyä vaativat metodit
+- Koodattu käyttöliittymän kaikki näkymät valmiiksi
