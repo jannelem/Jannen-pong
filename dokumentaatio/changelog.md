@@ -29,7 +29,7 @@
 - Peliin ainoana näkyvänä toiminnallisuutena lisätty pistelaskuri, aika ei tällä viikolla riitä muuhun
 - Koodiin tehty pientä hienosäätöä eri puolille
 
-## Viikot 7 ja 8 (lopullinen palautus lisäajalla):
+## Viikot 7 ja 8 (lopullinen palautus myönnetyllä lisäajalla):
 
 - Lisätty pistelista ja sen käsittelyä vaativat metodit
 - Koodattu käyttöliittymän kaikki näkymät valmiiksi
