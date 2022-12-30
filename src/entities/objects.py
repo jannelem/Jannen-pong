@@ -77,6 +77,7 @@ class Ball(pygame.sprite.Sprite):
     def bounce(self):
         """Muuttaa pallon nopeutta satunnaisesti sen törmätessä mailaan siten, että pallon nopeuden vaakasuora komponentti vaihtaa suuntaansa.
         """
+        self.rect.x -= self.velocity[0]
         if self.velocity[0] > 0:
             self.velocity[0] = randint(-8, -1)
         elif self.velocity[0] < 0:

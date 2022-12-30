@@ -82,3 +82,22 @@ class TestPongService(unittest.TestCase):
         self.pong_service.sprites().update()
         self.pong_service._handle_paddle_collisions()
         self.assertGreater(self.pong_service.pong.ball.velocity[0], 0)
+    
+    def test_check_new_hi_score_returns_true(self):
+        self.pong_service.pong.scores = [3,17]
+        self.assertEqual(self.pong_service.check_new_hi_score(), True)
+
+    def test_check_new_hi_score_returns_false(self):
+        self.pong_service.pong.scores = [2, 18]
+        self.assertEqual(self.pong_service.check_new_hi_score(), False)
+
+    def test_game_ends_when_scored(self):
+        self.pong_service.pong.scores = [10,9]
+        self.pong_service._player_scores()
+        self.pong_service.handle_game_events()
+        self.assertEqual(self.pong_service.running(), False)
+    
+    def test_game_continues_when_scored(self):
+        self.pong_service.pong.scores = [10,8]
+        self.pong_service._computer_scores()
+        self.assertEqual(self.pong_service.running(), True)

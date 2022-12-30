@@ -33,3 +33,4 @@
 
 - Lisätty pistelista ja sen käsittelyä vaativat metodit
 - Koodattu käyttöliittymän kaikki näkymät valmiiksi
+- Korjattu bugi, jonka takia pallo saattoi hetkellisesti "tarttua" mailaan.

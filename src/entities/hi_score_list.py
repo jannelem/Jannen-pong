@@ -33,10 +33,7 @@ class HiScoreList:
         for score in self._hiscorelist:
             lines.append(f"{score[0]:15} {score[1]:>2}")
         return lines
-
-    def __str__(self):
-        """Tulostaan pistelistan. Käytetään testaukseen."""
-        hiscorelist_string = ""
-        for score in self._hiscorelist:
-            hiscorelist_string += f"{score[0]:15} {score[1]:>2}\n"
-        return hiscorelist_string
+    
+    def tuples(self):
+        """Palauttaa pistelistan tupleina."""
+        return self._hiscorelist

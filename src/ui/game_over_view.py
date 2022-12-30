@@ -64,6 +64,8 @@ class GameOverView:
                         elif event.key == pygame.K_BACKSPACE and len(player_name_input) >= 2:
                             player_name_input = player_name_input[:-2]
                             player_name_input += "_"
+                        elif event.key == pygame.K_COMMA:
+                            pass
                         else:
                             player_name_input = player_name_input[:-1]
                             player_name_input += event.unicode

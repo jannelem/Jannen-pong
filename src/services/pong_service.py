@@ -79,11 +79,11 @@ class PongService:
     def _check_scores(self):
         """Tarkistaa, onko osumia kertynyt riittävästi pelin päättämiseen ja tarvittaessa päättää pelin.
         """
-        if sum(self.pong.scores) >= 10:
+        if sum(self.pong.scores) >= 20:
             self.pong.running = False
 
     def running(self):
-        """_summary_
+        """Tarkistaa, onko peli vielä käynnissä.
 
         Returns:
             True, jos peli on käynnissä. False, jos peli on päättynyt.

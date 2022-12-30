@@ -19,4 +19,5 @@
 | 29.12. | 5 | pistelistan koodaus ja käyttöliittymän kaikki näkymät valmiiksi |
 | 29.12. | 2 | käyttöohjeen kirjoittamista ja pientä siistismistä |
 | 29.12. | 1 | docstringin kirjoittamista viimeisimmille ohjelman laajennuksille |
+| 30.12. | 2 | testikattavuuden kasvattaminen
 | yht | 51 | |
