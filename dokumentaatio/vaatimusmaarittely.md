@@ -15,4 +15,5 @@ Seuraavia ominaisuuksia voidaan lisätä perusversioon kurssin edetessä, tavoit
 - aloitusvalikko, josta peli käynnistetään ja jonka kautta sovellus voidaan sulkea **tehty**
 - pelin aikana näkyvä pistelaskuri **tehty**
 - parhaiden pisteiden tallentaminen ohjelman suorituksen aikana **tehty**
-- parhaiden pisteiden pitkäaikaistallennus (tämä on vielä tällä hetkellä tekemättä)
+- pistelistan näyttäminen valikon kautta **tehty**
+- parhaiden pisteiden pitkäaikaistallennus **tämä jäi tekemättä**
