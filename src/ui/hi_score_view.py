@@ -12,7 +12,6 @@ class HiScoreView:
             screen (pygame.display): display-olio, jolle piirretään
             bkg_color (tuple): taustaväri
             object_color (tuple): tekstin väri
-            screen_size (tuple): ruudun koko
             hi_scores (HiScoreServive): HiScoreService-olio, joka tarjoaa parhaiden pisteiden listan.
         """
         self.bkg_color = bkg_color

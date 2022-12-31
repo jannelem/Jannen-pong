@@ -43,6 +43,18 @@ Pong "1" -- "1" Ball
 
 ## Toiminnallisuudet
 
-Alla oleva sekvenssikaavio kuvaa GameView-luokassa olevan pelisilmukan toimintaa yhden kierroksen aikana. Tässä esimerkissä pelaaja painaa nuolta alaspäin. Esimerkistä on luettavuuden takia jätetty pois tietokoneen mailan siirron ja pallon mahdollisten kimpoamisten yksityiskohtainen käsittely, sillä nämä sisältävät useita muuttujien arvojen lukemisia.
+### Pelaaminen
 
-![sekvenssikaavio](kuvat/sekvenssikaavio.png)
+Alla oleva sekvenssikaavio kuvaa pelin käynnistämistä ja pelaamista yhden pelisilmukan suorituksen aikana. Pelaaja siirtää mailaansa ylöspäin ja PongService-olio huolehtii tietokoneen mailan siirtämisestä ja pallon liikuttamisesta. Pelin mailojen ja pallon luomisen yksityiskohdat on jätetty kaaviosta luettavuuden parantamiseksi pois.
+
+![pelaamisen sekvenssikaavio](kuvat/sekvenssikaavio_pelaaminen.png)
+
+### Pelin lopettaminen ja pisteiden tallentaminen
+
+Tämän sekvenssikaavion alkutilanteessa peli on jo käynnissä ja pelaaja saa pisteen, mikä päättää pelin. Pelaajan pisteet tallennetaan listalle pelaajan nimen kanssa. Tämän jälkeen ohjelma palaa päävalikkoon.
+
+### Pistelistan tarkastelu
+
+Seuraavassa sekvenssikaaviossa esitetään ohjelman käynnistäminen ja pistelistan tarkastelu, jonka jälkeen palataan päävalikkoon ja ohjelma suljetana.
+
+![pistelistan sekvenssikaavio](kuvat/sekvenssikaavio_pistelista.png)

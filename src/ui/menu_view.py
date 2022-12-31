@@ -17,6 +17,7 @@ class MenuView:
             object_color (tuple): tekstin väri
             screen_size (tuple): ruudun koko
             object_width (int): objektien koko
+            hi_scores (HiScoreService): pistelistasta huolehtiva HiScoreService-olio
         """
         self.bkg_color = bkg_color
         self.object_color = object_color
