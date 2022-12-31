@@ -21,5 +21,6 @@
 | 29.12. | 1 | docstringin kirjoittamista viimeisimmille ohjelman laajennuksille |
 | 30.12. | 2 | testikattavuuden kasvattaminen
 | 30.12. | 6 | dokumentaatio |
-| 31.12. | ? | 
-| yht | 51 | |
+| 31.12. | 4 | sekvenssikaavioiden laatiminen ja arkkitehtuurikuvauksen viimeistely |
+| 31.12. | 1 | lintin ilmoittamien virheiden korjaus
+| yht | 56 | |

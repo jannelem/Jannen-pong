@@ -60,3 +60,9 @@ Tämän sekvenssikaavion alkutilanteessa peli on jo käynnissä ja pelaaja saa p
 Seuraavassa sekvenssikaaviossa esitetään ohjelman käynnistäminen ja pistelistan tarkastelu, jonka jälkeen palataan päävalikkoon ja ohjelma suljetana.
 
 ![pistelistan sekvenssikaavio](kuvat/sekvenssikaavio_pistelista.png)
+
+## Koodiin jääneet laatuongelmat
+
+Tähän työhön käytettävissä oleen ajan puitteissa ei saatu toteutettua tietojen pitkäaikaistallennusta. Ohjelmaa voisi parantaa lisäämällä arkkitehtuuriin kolmannen repositories-tason, johon yksinkertaisimmillaan koodattaisiin pistelistan lukeminen tiedostosta ja kirjoittaminen tiedostoon. Pistelistan lukua voisi hyödyntää HiScoreService-oliossa luotaessa pistelista, johon nykyisessä versiossa asetetaan ohjelmaa käynnistettäessä oletusarvot. Vastaavasti pistelistan tallennus tehtäisiin aina, kun uusi tulos lisätään.
+
+Lisäksi ohjelmaan voisi lisätä konfiguroitavuutta esimerkiksi ruudun koon, värien ja fonttien suhteen.
