@@ -10,8 +10,8 @@ def main():
     screen = pygame.display.set_mode(screen_size)
     pygame.display.set_caption = ("Jannen Pong")
 
-    view = MenuView(screen, bkg_color, object_color, screen_size, object_width)
-    view.run()
+    menu_view = MenuView(screen, bkg_color, object_color, screen_size, object_width)
+    menu_view.run()
 
 
 if __name__ == "__main__":
