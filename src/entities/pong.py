@@ -14,7 +14,8 @@ class Pong:
             paddles: mailat sisältävä ryhmä
             all_sprites: mailat ja pallon sisältävä ryhmä
             running (boolean): True, jos peli on meneillään ja False, jos peli on päättynyt
-            scores (list): Pelin pisteet (ensimmäinen alkio pelaajan pisteet ja toinen alkio tietokoneen)
+            scores (list): Pelin pisteet (ensimmäinen alkio pelaajan pisteet ja
+            toinen alkio tietokoneen)
 
     """
 

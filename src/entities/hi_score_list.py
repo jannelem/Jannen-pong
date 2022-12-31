@@ -1,6 +1,7 @@
 class HiScoreList:
     """Pistelistastan ylläpidosta huolehtiva luokka
     """
+
     def __init__(self):
         """Luokan konstruktori, joka lisää alkuarvot pistelistalle tupleina."""
         self._hiscorelist = []
@@ -12,7 +13,8 @@ class HiScoreList:
         self.sort_list()
 
     def add_score(self, name, score):
-        """Lisää uuden tuloksen pistelistalle ja järjestää listan sekä typistää sen pituuden viiteen riviin."
+        """Lisää uuden tuloksen pistelistalle ja järjestää listan sekä typistää sen
+        pituuden viiteen riviin."
 
         Args:
             name (String): pelaajan nimi
@@ -33,7 +35,7 @@ class HiScoreList:
         for score in self._hiscorelist:
             lines.append(f"{score[0]:15} {score[1]:>2}")
         return lines
-    
+
     def tuples(self):
         """Palauttaa pistelistan tupleina."""
         return self._hiscorelist

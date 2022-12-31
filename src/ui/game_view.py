@@ -72,5 +72,5 @@ class GameView:
             clock.tick(60)
 
         game_over_view = GameOverView(self.screen, self.bkg_color, self.object_color,
-                                       self.hi_scores, self.pong_service)
+                                      self.hi_scores, self.pong_service)
         game_over_view.run()

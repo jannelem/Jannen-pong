@@ -53,6 +53,8 @@ Alla oleva sekvenssikaavio kuvaa pelin käynnistämistä ja pelaamista yhden pel
 
 Tämän sekvenssikaavion alkutilanteessa peli on jo käynnissä ja pelaaja saa pisteen, mikä päättää pelin. Pelaajan pisteet tallennetaan listalle pelaajan nimen kanssa. Tämän jälkeen ohjelma palaa päävalikkoon.
 
+![pisteiden tallennuksen sekvenssikaavio](kuvat/sekvenssikaavio_pelin_lopetus.png)
+
 ### Pistelistan tarkastelu
 
 Seuraavassa sekvenssikaaviossa esitetään ohjelman käynnistäminen ja pistelistan tarkastelu, jonka jälkeen palataan päävalikkoon ja ohjelma suljetana.

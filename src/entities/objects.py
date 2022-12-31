@@ -3,7 +3,8 @@ import pygame
 
 
 class Paddle(pygame.sprite.Sprite):
-    """Pelin mailan toiminnallisuudesta vastaava luokka, joka pohjautuu pygame-kirjaston luokkaan Sprite.
+    """Pelin mailan toiminnallisuudesta vastaava luokka, joka pohjautuu pygame-kirjaston
+    luokkaan Sprite.
 
     """
 
@@ -26,7 +27,8 @@ class Paddle(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
     def move_up(self, step_size):
-        """Siirtää mailaa ylöspäin määritetyn step_sizen verran, mutta varmistaa ettei mailan y-koordinaatti mene nollaa pienemmäksi.
+        """Siirtää mailaa ylöspäin määritetyn step_sizen verran, mutta varmistaa ettei
+        mailan y-koordinaatti mene nollaa pienemmäksi.
 
         Args:
             step_size (int): määrä, jolla mailan y-koordinaattia muutetaan.
@@ -35,7 +37,8 @@ class Paddle(pygame.sprite.Sprite):
         self.rect.y = max(self.rect.y, 0)
 
     def move_down(self, step_size, screen_size):
-        """Siirtää mailaa alaspäin määritetyn step_sizen verran, mutta varmistaa ettei maila päädy näytön alareunan ulkopuolelle.
+        """Siirtää mailaa alaspäin määritetyn step_sizen verran, mutta varmistaa
+        ettei maila päädy näytön alareunan ulkopuolelle.
 
         Args:
             step_size (int): määrä, jolla mailan y-koordinaattia muutetaan
@@ -46,11 +49,13 @@ class Paddle(pygame.sprite.Sprite):
 
 
 class Ball(pygame.sprite.Sprite):
-    """Pelin pallon toiminnallisuudesta vastaava luokka, joka pohjautuu pygame-kirjaston luokkaan Sprite.
+    """Pelin pallon toiminnallisuudesta vastaava luokka, joka pohjautuu
+    pygame-kirjaston luokkaan Sprite.
     """
 
     def __init__(self, bkg_color, object_color, object_width):
-        """Luokan konstruktori, joka luo uuden pallon, joka sijaitsee keskellä ruutua ja saa satunnaisen nopeuden.
+        """Luokan konstruktori, joka luo uuden pallon, joka sijaitsee keskellä
+        ruutua ja saa satunnaisen nopeuden.
 
         Args:
             bkg_color (tuple): taustaväri
@@ -75,7 +80,8 @@ class Ball(pygame.sprite.Sprite):
         self.rect.y += self.velocity[1]
 
     def bounce(self):
-        """Muuttaa pallon nopeutta satunnaisesti sen törmätessä mailaan siten, että pallon nopeuden vaakasuora komponentti vaihtaa suuntaansa.
+        """Muuttaa pallon nopeutta satunnaisesti sen törmätessä mailaan siten, että pallon
+        nopeuden vaakasuora komponentti vaihtaa suuntaansa.
         """
         self.rect.x -= self.velocity[0]
         if self.velocity[0] > 0:

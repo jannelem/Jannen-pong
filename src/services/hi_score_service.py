@@ -3,6 +3,7 @@ from entities.hi_score_list import HiScoreList
 
 class HiScoreService:
     """Pistelistan tietoja muokkaava luokka."""
+
     def __init__(self):
         """Konstruktori, joka luo listan.
         """

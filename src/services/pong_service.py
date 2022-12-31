@@ -3,7 +3,8 @@ from entities.pong import Pong
 
 
 class PongService:
-    """Luokka, joka muokkaa pelin Pong-luokan tietosisältöä ja jonka metodeita kutsutaan käyttöliittymäluokista.
+    """Luokka, joka muokkaa pelin Pong-luokan tietosisältöä ja jonka
+        metodeita kutsutaan käyttöliittymäluokista.
     """
 
     def __init__(self, bkg_color, object_color, screen_size, object_width, hi_scores):
@@ -31,7 +32,10 @@ class PongService:
         self.pong.player_paddle.move_down(self.object_width, self.screen_size)
 
     def _computer_move(self):
-        """Tietokoneen mailan liikuttamisesta vastaava metodi, joka liikuttaa mailaa pystysuunnassa siten, että mailan keskikohta olisi kohdakkain pallon kanssa. Maila liikkuu silloin, kun pallo on tietokoneen puolella ruutua ja pallo on liikkumassa tietokoneen mailan suuntaan.
+        """Tietokoneen mailan liikuttamisesta vastaava metodi, joka liikuttaa mailaa
+        pystysuunnassa siten, että mailan keskikohta olisi kohdakkain pallon kanssa.
+        Maila liikkuu silloin, kun pallo on tietokoneen puolella ruutua ja pallo on
+        liikkumassa tietokoneen mailan suuntaan.
         """
         if self.pong.ball.velocity[0] > 0 and self.pong.ball.rect.x >= self.screen_size[0]/2:
             if self.pong.computer_paddle.rect.center[1] > self.pong.ball.rect.center[1]:
@@ -54,13 +58,15 @@ class PongService:
             self.pong.ball.velocity[1] *= -1
 
     def _handle_paddle_collisions(self):
-        """Tarkistaa, törmääkö pallo pelaajan tai tietokoneen mailaan. Pallon törmätessä kutsuu pallon bounce-metodia."""
+        """Tarkistaa, törmääkö pallo pelaajan tai tietokoneen mailaan.
+         Pallon törmätessä kutsuu pallon bounce-metodia."""
         for paddle in self.pong.paddles:
             if pygame.sprite.collide_mask(self.pong.ball, paddle):
                 self.pong.ball.bounce()
 
     def handle_game_events(self):
-        """Suorittaa pelin kierroksen aikana tietokoneen mailan siirron ja käsittelee törmäyksen seinien ja mailojen kanssa."""
+        """Suorittaa pelin kierroksen aikana tietokoneen mailan siirron ja käsittelee
+        törmäyksen seinien ja mailojen kanssa."""
         self._computer_move()
         self._handle_wall_collisions()
         self._handle_paddle_collisions()
@@ -77,7 +83,8 @@ class PongService:
         self.pong.scores[1] += 1
 
     def _check_scores(self):
-        """Tarkistaa, onko osumia kertynyt riittävästi pelin päättämiseen ja tarvittaessa päättää pelin.
+        """Tarkistaa, onko osumia kertynyt riittävästi pelin päättämiseen ja
+        tarvittaessa päättää pelin.
         """
         if sum(self.pong.scores) >= 20:
             self.pong.running = False
