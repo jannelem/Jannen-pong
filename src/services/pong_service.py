@@ -112,4 +112,9 @@ class PongService:
         return self.pong.scores
 
     def check_new_hi_score(self):
+        """Tarkistaa, riittävätkö pelaajan pisteet pistelistalle pääsemiseen.
+
+        Returns:
+            boolean: True, jos pisteet riittävät, False, jos eivät.
+        """
         return self.scores()[0] > self.hi_scores.lowest_score()
