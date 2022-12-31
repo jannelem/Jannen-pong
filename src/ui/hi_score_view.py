@@ -5,7 +5,7 @@ class HiScoreView:
     """Pistelistan näyttämisestä vastaava käyttöliittymäluokka.
     """
 
-    def __init__(self, screen, bkg_color, object_color, screen_size, object_width, hi_scores):
+    def __init__(self, screen, bkg_color, object_color, hi_scores):
         """Luokan konstruktori.
 
         Args:
@@ -13,14 +13,11 @@ class HiScoreView:
             bkg_color (tuple): taustaväri
             object_color (tuple): tekstin väri
             screen_size (tuple): ruudun koko
-            object_width (int): objektien koko
             hi_scores (HiScoreServive): HiScoreService-olio, joka tarjoaa parhaiden pisteiden listan.
         """
         self.bkg_color = bkg_color
         self.object_color = object_color
         self.screen = screen
-        self.screen_size = screen_size
-        self.object_width = object_width
         self.hi_scores = hi_scores
 
     def run(self):

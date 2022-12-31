@@ -74,5 +74,5 @@ class MenuView:
     def show_high_scores(self):
         """Näyttää parhaiden pisteiden listan."""
         hi_score_view = HiScoreView(self.screen, self.bkg_color,
-                                    self.object_color, self.screen_size, self.object_width, self.hi_scores)
+                                    self.object_color, self.hi_scores)
         hi_score_view.run()

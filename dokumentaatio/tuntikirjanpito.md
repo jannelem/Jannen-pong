@@ -20,4 +20,6 @@
 | 29.12. | 2 | käyttöohjeen kirjoittamista ja pientä siistismistä |
 | 29.12. | 1 | docstringin kirjoittamista viimeisimmille ohjelman laajennuksille |
 | 30.12. | 2 | testikattavuuden kasvattaminen
+| 30.12. | 6 | dokumentaatio |
+| 31.12. | ? | 
 | yht | 51 | |

@@ -5,23 +5,19 @@ class GameOverView:
     """Pelin päättymisnäytöstä vastaava käyttöliittymäluokka.
     """
 
-    def __init__(self, screen, bkg_color, object_color, screen_size, object_width, hi_scores, pong_service):
+    def __init__(self, screen, bkg_color, object_color, hi_scores, pong_service):
         """Luokan konstruktori.
 
         Args:
             screen (pygame.display): display-olio, jolle piirretään
             bkg_color (tuple): taustaväri
             object_color (tuple): tekstin väri
-            screen_size (tuple): ruudun koko
-            object_width (int): objektien koko
             hi_scores (HiScoreService): pistelistasta vastaava HiScoreService-olio
             pong_service (PongService): peliä hallinnoinut PongService-olio
         """
         self.bkg_color = bkg_color
         self.object_color = object_color
         self.screen = screen
-        self.screen_size = screen_size
-        self.object_width = object_width
         self.hi_scores = hi_scores
         self.pong_service = pong_service
 
